@@ -2,7 +2,7 @@ from flask import Flask, render_template
 app = Flask(__name__)    # Create a new instance of the Flask class called "app"
 @app.route('/')          # The "@" decorator associates this route with the function immediately following
 def index():
-    return render_template('index.html', box=0)
+    return render_template('index.html', box=3)
 
 @app.route('/play')
 def play():
